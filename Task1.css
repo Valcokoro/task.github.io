@@ -1,0 +1,109 @@
+@media(min-width:75px){
+
+body{
+    background-color:rgb(245, 35, 35);
+    background-image: url('SE1.jpg');
+}
+
+h1{
+    text-size-adjust: 200px;
+    font-size: 50px
+}
+
+p{
+    font-size: 20px;
+}
+
+#btn{
+    background-color: gold;
+    color: purple;
+    margin-right: 50%;
+    display: block;
+    width:400px;
+    height:50px;
+    border-radius: 0px;
+    margin-top: 50px
+    
+}
+
+form{
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    margin-right: 60%;
+    display: inline-block;
+    border-radius: 0px;
+    color: black;
+    text-align: center;
+    margin-top: 20px
+    
+
+}
+
+#fname{
+    padding:5px;
+    margin:20px;
+    margin-top: 20px ;
+    border-radius: 0px;
+    width: 350px
+}
+
+#lname{
+    padding:5px;
+    margin:20px;
+    margin-top: 20px ;
+    border-radius: 0px;
+    width: 350px
+}
+
+#Email{
+    padding:5px;
+    margin:20px;
+    margin-top: 20px ;
+    border-radius: 0px;
+    width: 350px
+}
+
+#password{
+    padding:5px;
+    margin:20px;
+    margin-top: 20px ;
+    border-radius: 0px;
+    width: 350px
+}
+
+#btn1{
+    background-color: green;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    margin-top: 15px;
+    width:350px;
+    height:40px;
+    border-radius: 0px;
+}
+a{
+    color:red;
+    text-decoration: none;
+}
+
+.grid-item1 {
+    padding: 20px;
+    margin-top:200px;
+    color: white
+
+}
+
+.grid-item2 {
+    padding: 20px;
+    margin-top:0
+
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
