@@ -20,23 +20,34 @@
      <div class="grid-item2" id="s2">
     <button id="btn"><b id="fb">Try it free 7 days</b> then <br>$20/mo.thereafter</button>
 
-    <form>
-    
-     <input type="fname" id="fname" onfocus="if (this.value=='First Name') 
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+
+   
+     <input type="fname" id="fname" name="fname" onfocus="if (this.value=='First Name') 
      this.value = ''" type="text" value="First Name"><br>
-     <input type="lname" id="lname" onfocus="if (this.value=='Last Name') 
+     <input type="lname" id="lname" name="lname" onfocus="if (this.value=='Last Name') 
      this.value = ''" type="text" value="Last Name"><br>
-     <input type="Email" id="Email" onfocus="if (this.value=='Email') 
+     <input type="Email" id="Email" name="Email" onfocus="if (this.value=='Email') 
      this.value = ''" type="text" value="Email"><br>
-     <input type="password" id="password" onfocus="if (this.value=='password') 
+     <input type="password" id="password" name="password" onfocus="if (this.value=='password') 
      this.value = ''" type="text" value="password">
-     <button type= "submit" id="btn1">CLAIM YOUR FREE TRIAL</button>
+     <input type="submit"  id="submit" value="CLAIM YOUR FREE TRIAL"><br>
+    </div>
      By clicking the button, you are agreeing to our <b><a href="https://google.com">Terms and Conditions</a></b>
     </form>
 </div>
-</div>
 
 <script>
-    document.querySelector('')
+    function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "" || x == null) {
+    alert("Fill Blank Space");
+    return false;
+  }
+  }
 </script>
+
+
+</body>
+
 </html>
